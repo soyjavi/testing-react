@@ -1,0 +1,7 @@
+# Folders
+#
+
+# Files
+**/*.accessibility.*
+**/*.test.*
+**/*.visual.*

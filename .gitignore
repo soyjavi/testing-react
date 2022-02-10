@@ -1,0 +1,14 @@
+# Folders
+.expo/*
+.storyteller/.cache
+build/
+coverage/
+node_modules/
+web-build/
+**/__diff_output__/
+
+# Files
+**/.DS_Store
+.eslintcache
+.vscode
+yarn-error.log

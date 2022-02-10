@@ -1,0 +1,65 @@
+{
+  "name": "@soyjavi/testing-react",
+  "version": "0.1.0",
+  "description": "Simple and complete testing utilities that encourage good universal testing practices",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "license": "MIT",
+  "bugs": "https://github.com/soyjavi/testing-react/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soyjavi/testing-react"
+  },
+  "scripts": {
+    "setup": "rm -rf node_modules && rm -rf yarn.lock && yarn install --force",
+    "start": "expo start --web",
+    "build": "node scripts/build.js",
+    "build:storyteller": "node scripts/expo.js build:web --no-pwa",
+    "test": "node scripts/test.js",
+    "test:watch": "node scripts/test.js -o --watch --coverage=false",
+    "test:coverage": "jest --coverage --coverageReporters=text --detectOpenHandles --forceExit --silent",
+    "test:visual": "jest --passWithNoTests --config ./jest.config.visual.js --silent",
+    "lint": "eslint --cache --fix --format codeframe --ext .jsx,.js,.tsx,.ts src",
+    "pipeline": "yarn lint && yarn test && yarn build && yarn publish",
+    "postversion": "git push --set-upstream origin master && git push --tags",
+    "publish": "yarn version --patch && npm publish --access public"
+  },
+  "dependencies": {
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/react-native": "^7.2.0",
+    "jest-image-snapshot": "4.5.1",
+    "puppeteer": "10.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7",
+    "@babel/core": "^7.9.0",
+    "@expo/webpack-config": "^0.12",
+    "@soyjavi/eslint": "^0.1",
+    "@testing-library/jest-native": "^4.0.2",
+    "@testing-library/react-hooks": "^5.1.1",
+    "@types/react": "~16.9.35",
+    "@types/react-dom": "~16.9.8",
+    "@types/react-native": "~0.63.2",
+    "@typescript-eslint/eslint-plugin": "3.5.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "babel-plugin-module-resolver": "^4",
+    "eslint": "7.3.1",
+    "eslint-config-prettier": "6.11.0",
+    "eslint-plugin-babel": "^5.3.1",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-jsx-a11y": "6.3.1",
+    "eslint-plugin-prettier": "3.1.4",
+    "eslint-plugin-react": "7.20.3",
+    "eslint-plugin-react-hooks": "4.0.5",
+    "expo": "^41.0.1",
+    "jest-expo": "^41.0.0",
+    "prettier": "^2.2.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-native": "0.63.4",
+    "react-native-web": "~0.13.12",
+    "typescript": "4"
+  }
+}

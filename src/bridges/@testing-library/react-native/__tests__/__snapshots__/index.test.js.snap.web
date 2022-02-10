@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`bridge:@testing-library/react-native accessibilityLabel 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="soyjavi"
+    class="css-cursor-18t94o4 css-view-1dbjc4n"
+    data-focusable="true"
+    role="button"
+    style="background-color: rgb(132, 21, 132); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; cursor: pointer; transition-duration: 0s; transition-property: opacity; user-select: none;"
+    tabindex="0"
+  >
+    <div
+      class="css-text-901oao"
+      dir="auto"
+      style="color: rgb(255, 255, 255); font-weight: 500; padding: 8px 8px 8px 8px; text-align: center; text-transform: uppercase;"
+    >
+      Learn More
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`bridge:@testing-library/react-native renders 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Learn more about this purple button"
+    class="css-cursor-18t94o4 css-view-1dbjc4n"
+    data-focusable="true"
+    role="button"
+    style="background-color: rgb(132, 21, 132); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; cursor: pointer; transition-duration: 0s; transition-property: opacity; user-select: none;"
+    tabindex="0"
+  >
+    <div
+      class="css-text-901oao"
+      dir="auto"
+      style="color: rgb(255, 255, 255); font-weight: 500; padding: 8px 8px 8px 8px; text-align: center; text-transform: uppercase;"
+    >
+      Learn More
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`bridge:@testing-library/react-native testID 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Learn more about this purple button"
+    class="css-cursor-18t94o4 css-view-1dbjc4n"
+    data-focusable="true"
+    data-testid="soyjavi"
+    role="button"
+    style="background-color: rgb(132, 21, 132); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; cursor: pointer; transition-duration: 0s; transition-property: opacity; user-select: none;"
+    tabindex="0"
+  >
+    <div
+      class="css-text-901oao"
+      dir="auto"
+      style="color: rgb(255, 255, 255); font-weight: 500; padding: 8px 8px 8px 8px; text-align: center; text-transform: uppercase;"
+    >
+      Learn More
+    </div>
+  </div>
+</DocumentFragment>
+`;
