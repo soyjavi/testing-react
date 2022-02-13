@@ -2243,9 +2243,9 @@
     type-detect "4.0.8"
 
 "@soyjavi/eslint@^0.1":
-  version "0.1.0"
-  resolved "https://registry.npmjs.org/@soyjavi/eslint/-/eslint-0.1.0.tgz#f5f6340783f79287979686a1cf16ee66ccfce4ea"
-  integrity sha512-zd1FCLmlxddibvSqTbLWc9OD8T6UaKcEvS25rnj+KH4p1nK0CUzat6mGscd0r2K0iX8/SU01DruJRwG/vbB9aA==
+  version "0.1.4"
+  resolved "https://registry.npmjs.org/@soyjavi/eslint/-/eslint-0.1.4.tgz#e142491dc7ef911308cdcc177e8d10db55ca3bf3"
+  integrity sha512-4XoCDGfw6e1rnW2mRB8fPYT8/Wg//UcNJ3eMdHGYRkEbhXbghcVzgvJrXrix8SO3qGwwlGZAmxuGDm9+05vPRA==
 
 "@testing-library/dom@^8.0.0":
   version "8.11.3"
