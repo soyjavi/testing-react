@@ -6,7 +6,7 @@ exports[`bridge:@testing-library/react-native accessibilityLabel 1`] = `
   accessibilityRole="button"
   accessibilityState={Object {}}
   accessible={true}
-  focusable={false}
+  focusable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -57,7 +57,7 @@ exports[`bridge:@testing-library/react-native renders 1`] = `
   accessibilityRole="button"
   accessibilityState={Object {}}
   accessible={true}
-  focusable={false}
+  focusable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",
@@ -108,7 +108,7 @@ exports[`bridge:@testing-library/react-native testID 1`] = `
   accessibilityRole="button"
   accessibilityState={Object {}}
   accessible={true}
-  focusable={false}
+  focusable={true}
   nativeBackgroundAndroid={
     Object {
       "attribute": "selectableItemBackground",

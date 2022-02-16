@@ -5,10 +5,10 @@ import { Button } from 'react-native';
 import { fireEvent, render } from '../';
 
 const DEFAULTS = {
-  // onPress: {onPressLearnMore},
-  title: 'Learn More',
-  color: '#841584',
   accessibilityLabel: 'Learn more about this purple button',
+  color: '#841584',
+  title: 'Learn More',
+  onPress: jest.fn(),
 };
 
 describe('bridge:@testing-library/react-native', () => {
@@ -18,11 +18,10 @@ describe('bridge:@testing-library/react-native', () => {
   });
 
   test('prop:onPress', async () => {
-    const handlePress = jest.fn();
-    const { getByRole } = render(<Button {...DEFAULTS} onPress={handlePress} />);
+    const { getByRole } = render(<Button {...DEFAULTS} />);
 
     fireEvent.press(getByRole('button'));
-    expect(handlePress).toHaveBeenCalledTimes(1);
+    expect(DEFAULTS.onPress).toHaveBeenCalledTimes(1);
   });
 
   test('accessibilityLabel', () => {
