@@ -25,7 +25,6 @@ describe('bridge:@testing-library/react-native', () => {
     expect(handlePress).toHaveBeenCalledTimes(1);
   });
 
-  // // Testing
   test('accessibilityLabel', () => {
     const { toJSON, getByLabelText } = render(<Button {...DEFAULTS} accessibilityLabel="soyjavi" />);
     expect(getByLabelText('soyjavi')).toBeDefined();

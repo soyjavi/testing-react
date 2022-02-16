@@ -10,9 +10,5 @@ const { breakline, command } = require('./command');
 
   babel(params);
 
-  command(
-    'npx -p typescript tsc build/**/*.js --declaration --allowJs --emitDeclarationOnly --skipLibCheck --outDir build',
-  );
-
   breakline();
 })();
